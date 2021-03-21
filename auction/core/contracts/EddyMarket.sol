@@ -1,6 +1,6 @@
-pragma solidity >=0.4.21 <0.6.0;
+pragma solidity 0.6.8;
 
-import "https://github.com/starkware-libs/veedo/blob/master/contracts/BeaconContract.sol";
+import "./BeaconContract.sol";
 import "./Market.sol";
 
 contract Beacon{
