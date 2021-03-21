@@ -16,6 +16,10 @@ The Food Streets are captured on Videos and added to the IPFS. The Food Recipes 
 * Rainbow Bridge
 * NodeJS, ReactJS
 
-## Contents
+## Deployment
+- EddyNet Streaming Token
+- https://mumbai-explorer.matic.today/tx/0x0f1c0d8bf80860635ee0cac31247a38a440157a4d30cc2663383390f0234c60f
 
-![First EddyNet Recipe on IPFS](https://github.com/Semiott/EddyNet/blob/main/IPFSAdd_Recipe_21032021.png)
+## Images
+
+![First EddyNet Recipe on IPFS](https://github.com/Semiott/EddyNet/blob/main/images/IPFSAdd_Recipe_21032021.png)
