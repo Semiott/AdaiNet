@@ -1,4 +1,4 @@
-# Eddy Buddy Edible Experience Platforom Powered by Ethereum 
+# Edible Experience and Entertainment Platforom Powered by Ethereum 
 Creative Convergence of Chefs and Coders for the Culinary Community of GastroNauts
 
 ## Concept
