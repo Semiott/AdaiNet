@@ -13,7 +13,8 @@ pragma experimental ABIEncoderV2;
  *
  * This contract is only required for intermediate, library-like contracts.
  */
-abstract contract Context {
+ 
+ contract Context {
     function _msgSender() internal view virtual returns (address payable) {
         return msg.sender;
     }
