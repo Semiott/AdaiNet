@@ -18,4 +18,4 @@ The Food Streets are captured on Videos and added to the IPFS. The Food Recipes 
 
 ## Contents
 
-![First EddyNet Recipe on IPFS](https://github.com/Semiott/EddyNet/blob/main/IPFSAdd_Recipe_21032021.png)
+![First EddyNet Recipe on IPFS](https://github.com/Semiott/EddyNet/blob/main/images/IPFSAdd_Recipe_21032021.png)
