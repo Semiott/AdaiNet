@@ -24,8 +24,6 @@ contract EddyBuddy is ERC721{
  		
  		_mint(recipient, newItemId);  
  		
- 		_setTokenURI(newItemId, metadata);  
- 		
  		return newItemId;
 	}
 	
