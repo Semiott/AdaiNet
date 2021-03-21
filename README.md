@@ -18,4 +18,7 @@ The Food Streets are captured on Videos and added to the IPFS. The Food Recipes 
 
 ## Contents
 
+x-special/nautilus-clipboard
+copy
 file:///home/semiott/Downloads/Telegram%20Desktop/IPFSAdd_Recipe_21032021.png
+
