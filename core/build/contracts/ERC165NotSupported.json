@@ -1,0 +1,115 @@
+{
+  "contractName": "ERC165NotSupported",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.2+commit.661d1103\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/semiott/Apps/eth-apps/EddyNet/core/contracts/external/contracts/mocks/ERC165/ERC165NotSupported.sol\":\"ERC165NotSupported\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/semiott/Apps/eth-apps/EddyNet/core/contracts/external/contracts/mocks/ERC165/ERC165NotSupported.sol\":{\"keccak256\":\"0xe92ad77e905f6050dfff8b27f052835daf1dcc5ef8a21a20db08eb0e23055bd9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://100f72563a06e7c73c96f29d0383a8cb0d0081b77522be0acd75b8bc1f126708\",\"dweb:/ipfs/Qma4Hhm5KXg9BfRLvQBfRkMKMgxJJj8v7Y2MwaQaPqMv8D\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220b68bede2f5f5a6cfd128ca8316f80328165cb8477b596dd8872dd831dedf635364736f6c63430008020033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220b68bede2f5f5a6cfd128ca8316f80328165cb8477b596dd8872dd831dedf635364736f6c63430008020033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "58:31:52:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "58:31:52:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.8.0;\n\ncontract ERC165NotSupported { }\n",
+  "sourcePath": "/home/semiott/Apps/eth-apps/EddyNet/core/contracts/external/contracts/mocks/ERC165/ERC165NotSupported.sol",
+  "ast": {
+    "absolutePath": "/home/semiott/Apps/eth-apps/EddyNet/core/contracts/external/contracts/mocks/ERC165/ERC165NotSupported.sol",
+    "exportedSymbols": {
+      "ERC165NotSupported": [
+        20931
+      ]
+    },
+    "id": 20932,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 20930,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:52"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 20931,
+        "linearizedBaseContracts": [
+          20931
+        ],
+        "name": "ERC165NotSupported",
+        "nameLocation": "67:18:52",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 20932,
+        "src": "58:31:52"
+      }
+    ],
+    "src": "33:57:52"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/semiott/Apps/eth-apps/EddyNet/core/contracts/external/contracts/mocks/ERC165/ERC165NotSupported.sol",
+    "exportedSymbols": {
+      "ERC165NotSupported": [
+        20931
+      ]
+    },
+    "id": 20932,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 20930,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:52"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 20931,
+        "linearizedBaseContracts": [
+          20931
+        ],
+        "name": "ERC165NotSupported",
+        "nameLocation": "67:18:52",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 20932,
+        "src": "58:31:52"
+      }
+    ],
+    "src": "33:57:52"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.2+commit.661d1103.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-03-21T17:16:14.422Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
