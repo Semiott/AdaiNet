@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity >=0.6.2 <0.8.0;
+pragma solidity ^0.8.0;
 
 library MiMCpe7_generated {
 	function MiMCpe7 (uint256 in_x, uint256 in_k) internal pure returns (uint256 out_x) {
