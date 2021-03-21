@@ -1,7 +1,7 @@
+// SPDX-License-Identifier: MIT
 
-// File: @openzeppelin/contracts/introspection/IERC165.sol
-
-pragma solidity ^0.5.0;
+pragma solidity ^0.8.0;
+pragma experimental ABIEncoderV2;
 
 /**
  * @dev Interface of the ERC165 standard, as defined in the
@@ -23,11 +23,6 @@ interface IERC165 {
      */
     function supportsInterface(bytes4 interfaceId) external view returns (bool);
 }
-
-// File: @openzeppelin/contracts/token/ERC721/IERC721.sol
-
-pragma solidity ^0.5.0;
-
 
 /**
  * @dev Required interface of an ERC721 compliant contract.
@@ -79,10 +74,6 @@ contract IERC721 is IERC165 {
     function safeTransferFrom(address from, address to, uint256 tokenId, bytes memory data) public;
 }
 
-// File: @openzeppelin/contracts/token/ERC721/IERC721Receiver.sol
-
-pragma solidity ^0.5.0;
-
 /**
  * @title ERC721 token receiver interface
  * @dev Interface for any contract that wants to support safeTransfers
@@ -106,10 +97,6 @@ contract IERC721Receiver {
     function onERC721Received(address operator, address from, uint256 tokenId, bytes memory data)
     public returns (bytes4);
 }
-
-// File: @openzeppelin/contracts/math/SafeMath.sol
-
-pragma solidity ^0.5.0;
 
 /**
  * @dev Wrappers over Solidity's arithmetic operations with added overflow
@@ -217,10 +204,6 @@ library SafeMath {
     }
 }
 
-// File: @openzeppelin/contracts/utils/Address.sol
-
-pragma solidity ^0.5.0;
-
 /**
  * @dev Collection of functions related to the address type,
  */
@@ -246,10 +229,6 @@ library Address {
         return size > 0;
     }
 }
-
-// File: @openzeppelin/contracts/drafts/Counters.sol
-
-pragma solidity ^0.5.0;
 
 
 /**
@@ -285,10 +264,6 @@ library Counters {
         counter._value = counter._value.sub(1);
     }
 }
-
-// File: @openzeppelin/contracts/introspection/ERC165.sol
-
-pragma solidity ^0.5.0;
 
 
 /**
@@ -339,15 +314,6 @@ contract ERC165 is IERC165 {
         _supportedInterfaces[interfaceId] = true;
     }
 }
-
-// File: @openzeppelin/contracts/token/ERC721/ERC721.sol
-
-pragma solidity ^0.5.0;
-
-
-
-
-
 
 
 /**
@@ -641,9 +607,6 @@ contract ERC721 is ERC165, IERC721 {
     }
 }
 
-// File: @openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol
-
-pragma solidity ^0.5.0;
 
 
 /**
@@ -656,12 +619,6 @@ contract IERC721Enumerable is IERC721 {
 
     function tokenByIndex(uint256 index) public view returns (uint256);
 }
-
-// File: @openzeppelin/contracts/token/ERC721/ERC721Enumerable.sol
-
-pragma solidity ^0.5.0;
-
-
 
 
 /**
@@ -858,10 +815,6 @@ contract ERC721Enumerable is ERC165, ERC721, IERC721Enumerable {
     }
 }
 
-// File: @openzeppelin/contracts/token/ERC721/IERC721Metadata.sol
-
-pragma solidity ^0.5.0;
-
 
 /**
  * @title ERC-721 Non-Fungible Token Standard, optional metadata extension
@@ -872,12 +825,6 @@ contract IERC721Metadata is IERC721 {
     function symbol() external view returns (string memory);
     function tokenURI(uint256 tokenId) external view returns (string memory);
 }
-
-// File: @openzeppelin/contracts/token/ERC721/ERC721Metadata.sol
-
-pragma solidity ^0.5.0;
-
-
 
 
 contract ERC721Metadata is ERC165, ERC721, IERC721Metadata {
@@ -963,12 +910,6 @@ contract ERC721Metadata is ERC165, ERC721, IERC721Metadata {
         }
     }
 }
-
-// File: @openzeppelin/contracts/token/ERC721/ERC721Full.sol
-
-pragma solidity ^0.5.0;
-
-
 
 
 /**
