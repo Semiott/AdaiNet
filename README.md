@@ -1,4 +1,4 @@
-# BitAppetit
+# Eddy Buddy Edible Experience Platforom Powered by Ethereum 
 Creative Convergence of Chefs and Coders for the Culinary Community of GastroNauts
 
 ## Concept
