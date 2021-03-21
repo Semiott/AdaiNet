@@ -5,6 +5,7 @@ Creative Convergence of Chefs and Coders for the Culinary Community of GastroNau
 
 ## Technology
 - IPFS
+- Pinata
 - Minty
 - Solidity
 - Ethereum
