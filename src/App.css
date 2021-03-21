@@ -1,0 +1,57 @@
+.main_left{
+    margin: 70px 50px 70px -20px;
+    height: 80vh;
+}
+.main_right{
+    margin: 70px -20px 70px 50px;
+    height: 80vh;
+}
+
+.main1{
+    background: rgba(243, 222, 222, 1);
+}
+.main2{
+    background: rgba(196, 196, 196, 1);
+}
+.main3{
+    background: rgba(151, 193, 211, 1);
+}
+.main4{
+    background: rgba(35, 23, 23, 1);
+}
+.pos_rel{
+    position: relative;
+}
+.foodexp{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    text-align: center;
+    width: 50%;
+    padding: 150px;
+    background: rgba(35, 23, 23, 1);
+    color: white;
+    font-size: 40px;
+}
+.streamers{
+    background: rgba(146, 112, 12, 1);
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    width: 40%;
+    padding: 80px 50px;
+    color: white;
+    font-size: 30px;
+    border-radius: 20px;
+}
+.dreamers{
+    background: rgba(0, 0, 0, 1);
+    padding: 20px;
+    border-radius: 10px;
+}
+.chefcard{
+    padding: 20px;
+}
+.recipe
