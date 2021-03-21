@@ -19,16 +19,16 @@ contract ZSC {
     uint256 public epochLength;
     uint256 public fee;
 
-    uint256 constant MAX = 4294967295; // 2^32 - 1
-    mapping(bytes32 => Utils.G1Point[2]) acc; /
-    mapping(bytes32 => Utils.G1Point[2]) pending; /
+    uint256 constant MAX = 4294967295; 
+    mapping(bytes32 => Utils.G1Point[2]) acc; 
+    mapping(bytes32 => Utils.G1Point[2]) pending;
     mapping(bytes32 => uint256) lastRollOver;
     bytes32[] nonceSet; 
     uint256 lastGlobalUpdate = 0; 
 
     event TransferOccurred(Utils.G1Point[] parties, Utils.G1Point beneficiary);
 
-    constructor(address _coin, address _zether, address _burn, uint256 _epochLength) { 
+    constructor(address _edToken, address _zether, address _burn, uint256 _epochLength) { 
         EdToken = EddyStreetToken(_edToken);
         zetherVerifier = ZetherVerifier(_zether);
         burnVerifier = BurnVerifier(_burn);
@@ -81,7 +81,7 @@ contract ZSC {
         require(challenge == c, "Invalid registration signature!");
         bytes32 yHash = keccak256(abi.encode(y));
         require(!registered(yHash), "Account already registered!");
-        // pending[yHash] = [y, Utils.g()]; // "not supported" yet, have to do the below
+        // pending[yHash] = [y, Utils.g()];
         pending[yHash][0] = y;
         pending[yHash][1] = Utils.g();
     }
@@ -96,8 +96,8 @@ contract ZSC {
         Utils.G1Point memory scratch = pending[yHash][0];
         scratch = scratch.add(Utils.g().mul(bTransfer));
         pending[yHash][0] = scratch;
-        require(coin.transferFrom(msg.sender, address(this), bTransfer), "Transfer from sender failed.");
-        require(coin.balanceOf(address(this)) <= MAX, "Fund pushes contract past maximum value.");
+        require(EdToken.transferFrom(msg.sender, address(this), bTransfer), "Transfer from sender failed.");
+        require(EdToken.balanceOf(address(this)) <= MAX, "Fund pushes contract past maximum value.");
     }
 
     function transfer(Utils.G1Point[] memory C, Utils.G1Point memory D, Utils.G1Point[] memory y, Utils.G1Point memory u, bytes memory proof, Utils.G1Point memory beneficiary) public {
@@ -153,6 +153,6 @@ contract ZSC {
         nonceSet.push(uHash);
 
         require(burnVerifier.verifyBurn(scratch[0], scratch[1], y, lastGlobalUpdate, u, msg.sender, proof), "Burn proof verification failed!");
-        require(coin.transfer(msg.sender, bTransfer), "This shouldn't fail... Something went severely wrong.");
+        require(EdToken.transfer(msg.sender, bTransfer), "This shouldn't fail... Something went severely wrong.");
     }
 }
