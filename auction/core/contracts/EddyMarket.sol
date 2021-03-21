@@ -11,7 +11,7 @@ contract Beacon{
     
 }
 
-contract VerifiedPredictionMarket
+contract EddyMarket
 {
 
     address public BeaconContractAddress=0x79474439753C7c70011C3b00e06e559378bAD040;
