@@ -1,6 +1,7 @@
 pragma solidity >=0.4.21 <0.6.0;
 
 import "https://github.com/starkware-libs/veedo/blob/master/contracts/BeaconContract.sol";
+import "./Market.sol";
 
 contract Beacon{
     function getLatestRandomness() external constant returns(uint256,bytes32){}
