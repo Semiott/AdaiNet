@@ -17,7 +17,8 @@ The Food Streets are captured on Videos and added to the IPFS. The Food Recipes 
 * NodeJS, ReactJS
 
 ## Deployment
-EddyNet Streaming Token - https://mumbai-explorer.matic.today/tx/0x0f1c0d8bf80860635ee0cac31247a38a440157a4d30cc2663383390f0234c60f
+- EddyNet Streaming Token
+- https://mumbai-explorer.matic.today/tx/0x0f1c0d8bf80860635ee0cac31247a38a440157a4d30cc2663383390f0234c60f
 
 ## Images
 
