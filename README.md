@@ -8,7 +8,10 @@ Creative Convergence of Chefs and Coders for the Culinary Community of GastroNau
 - Minty
 - Solidity
 - Ethereum
+- NEAR
+- Rainbow Bridge
 - NodeJS
+- YARN
 - NPM
 
 ## Reference
