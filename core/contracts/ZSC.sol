@@ -13,37 +13,32 @@ contract ZSC {
     using Utils for uint256;
     using Utils for Utils.G1Point;
 
-    EddyStreetToken coin;
+    EddyStreetToken EdToken;
     ZetherVerifier zetherVerifier;
     BurnVerifier burnVerifier;
     uint256 public epochLength;
     uint256 public fee;
 
-    uint256 constant MAX = 4294967295; // 2^32 - 1 // no sload for constants...!
-    mapping(bytes32 => Utils.G1Point[2]) acc; // main account mapping
-    mapping(bytes32 => Utils.G1Point[2]) pending; // storage for pending transfers
+    uint256 constant MAX = 4294967295; // 2^32 - 1
+    mapping(bytes32 => Utils.G1Point[2]) acc; /
+    mapping(bytes32 => Utils.G1Point[2]) pending; /
     mapping(bytes32 => uint256) lastRollOver;
-    bytes32[] nonceSet; // would be more natural to use a mapping, but they can't be deleted / reset!
-    uint256 lastGlobalUpdate = 0; // will be also used as a proxy for "current epoch", seeing as rollovers will be anticipated
-    // not implementing account locking for now...revisit
+    bytes32[] nonceSet; 
+    uint256 lastGlobalUpdate = 0; 
 
     event TransferOccurred(Utils.G1Point[] parties, Utils.G1Point beneficiary);
-    // arg is still necessary for transfers---not even so much to know when you received a transfer, as to know when you got rolled over.
 
-    constructor(address _coin, address _zether, address _burn, uint256 _epochLength) { // visibiility won't be needed in 7.0
-        // epoch length, like block.time, is in _seconds_. 4 is the minimum!!! (To allow a withdrawal to go through.)
-        coin = SemiottCoin(_coin);
+    constructor(address _coin, address _zether, address _burn, uint256 _epochLength) { 
+        EdToken = EddyStreetToken(_edToken);
         zetherVerifier = ZetherVerifier(_zether);
         burnVerifier = BurnVerifier(_burn);
         epochLength = _epochLength;
         fee = zetherVerifier.fee();
         Utils.G1Point memory empty;
-        pending[keccak256(abi.encode(empty))][1] = Utils.g(); // "register" the empty account...
+        pending[keccak256(abi.encode(empty))][1] = Utils.g(); 
     }
 
     function simulateAccounts(Utils.G1Point[] memory y, uint256 epoch) view public returns (Utils.G1Point[2][] memory accounts) {
-        // in this function and others, i have to use public + memory (and hence, a superfluous copy from calldata)
-        // only because calldata structs aren't yet supported by solidity. revisit this in the future.
         uint256 size = y.length;
         accounts = new Utils.G1Point[2][](size);
         for (uint256 i = 0; i < size; i++) {
@@ -63,7 +58,7 @@ contract ZSC {
             Utils.G1Point[2][2] memory scratch = [acc[yHash], pending[yHash]];
             acc[yHash][0] = scratch[0][0].add(scratch[1][0]);
             acc[yHash][1] = scratch[0][1].add(scratch[1][1]);
-            // acc[yHash] = scratch[0]; // can't do this---have to do the above instead (and spend 2 sloads / stores)---because "not supported". revisit
+            // acc[yHash] = scratch[0]; 
             delete pending[yHash]; // pending[yHash] = [Utils.G1Point(0, 0), Utils.G1Point(0, 0)];
             lastRollOver[yHash] = e;
         }
@@ -96,7 +91,7 @@ contract ZSC {
         require(registered(yHash), "Account not yet registered.");
         rollOver(yHash);
 
-        require(bTransfer <= MAX, "Deposit amount out of range."); // uint, so other way not necessary?
+        require(bTransfer <= MAX, "Deposit amount out of range."); 
 
         Utils.G1Point memory scratch = pending[yHash][0];
         scratch = scratch.add(Utils.g().mul(bTransfer));
@@ -112,7 +107,7 @@ contract ZSC {
         require(C.length == size, "Input array length mismatch!");
 
         bytes32 beneficiaryHash = keccak256(abi.encode(beneficiary));
-        require(registered(beneficiaryHash), "Miner's account is not yet registered."); // necessary so that receiving a fee can't "backdoor" you into registration.
+        require(registered(beneficiaryHash), "Miner's account is not yet registered."); 
         rollOver(beneficiaryHash);
         pending[beneficiaryHash][0] = pending[beneficiaryHash][0].add(Utils.g().mul(fee));
 
@@ -123,7 +118,6 @@ contract ZSC {
             Utils.G1Point[2] memory scratch = pending[yHash];
             pending[yHash][0] = scratch[0].add(C[i]);
             pending[yHash][1] = scratch[1].add(D);
-            // pending[yHash] = scratch; // can't do this, so have to use 2 sstores _anyway_ (as in above)
 
             scratch = acc[yHash]; // trying to save an sload, i guess.
             CLn[i] = scratch[0].add(C[i]);
