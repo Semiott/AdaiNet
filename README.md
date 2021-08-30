@@ -7,7 +7,7 @@ Creative Convergence of Chefs and Coders for the Culinary Community of GastroNau
 
 ## What it does
 - Tokenisation of Street Food Experiences
-- 
+- Tokenisation of Convergent Chef Culture 
 
 ## How we built it
 
