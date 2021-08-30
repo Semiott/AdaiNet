@@ -1,4 +1,4 @@
-# Edible Experiences & Entertainments on Ethereum Ecosystem
+# A Decentralised Ontological Organisation for GastroNauts
 Creative Convergence of Chefs and Coders for the Culinary Community of GastroNauts
 
 ## Inspiration
