@@ -14,7 +14,7 @@ contract streamBeacon {
     
 }
 
-contract EddyStream is Initializable, Ownable, ReentrancyGuard {
+contract GastroStream is Initializable, Ownable, ReentrancyGuard {
     using SafeMath for uint256;
     
     address public BeaconContractAddress = 0x79474439753C7c70011C3b00e06e559378bAD040;
