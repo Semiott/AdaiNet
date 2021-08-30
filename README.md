@@ -12,12 +12,13 @@ Creative Convergence of Chefs and Coders for the Culinary Community of GastroNau
 - Tokenisises the food recipes, food streets, food sharing events, food blogs, food festivals and related social businesses.
 - Creates an enthusiastic and exciting future for dynamic decentralization of culinary cultures and cuisines across the world. 
 - Embarks on a creative convergence of food makers, lovers and consumers beyond the walls of accumulations and aggregations.  
+- Food Events, Festivals, Carnivals, Blogs, etc will be streamed through the ERC 1620 Streaming Token Specification. 
 
 ## How we built it
 - The Food Streets are captured on Videos and added to the IPFS. The Food Recipes are also added to IPFS. 
 - All these food related artifacts are minted into Non Fungible Tokens using the Minty Framework integrated to the IPFS. 
-- The profits from the Food Experiences are converted to Food Fungible ERC 20 tokens and then distributed through Bonding Curve based on Bancor Formula. 
-- Food Events, Festivals, Carnivals, Blogs, etc will be streamed through the ERC 1620 Streaming Token Specification. 
+- The profits from the Food Experiences are converted to Food Fungible ERC 20 tokens 
+- The Incentives generated from the Food NFT interactions are distributed through a Curve Contract powered by Bancor Formula. 
 - Food recipes and food experiences they are delivered through the Zether Framework implementation of ERC 1724 specification. 
 - A Food Auction on Zora Protocol and a Food Marketplace powered by the Graph Protocol are in progress. 
 - Food NFTs are deployed on the Rainbow Bridge between Ethereum and NEAR Protocol. 
