@@ -3,7 +3,7 @@ Creative Convergence of Chefs and Coders for the Culinary Community of GastroNau
 
 ## Inspiration
 - AAHAARA Apps from Semiott Society
-- A Hard Fork of EddyNet
+- A Soft Fork of EddieNet
 - An implementation of Ruchi Gramam
 - Culinary Communitites in Kundara, Kollam, Kerala
 
