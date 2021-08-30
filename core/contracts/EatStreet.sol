@@ -10,7 +10,7 @@ import "./Address.sol";
 import "./ReentrancyGuard.sol";
 import "./mimc7.sol";
 
-contract EddyStreetToken is Context, IERC20, ReentrancyGuard {
+contract EatStreet is Context, IERC20, ReentrancyGuard {
     using SafeMath for uint256;
     using Address for address;
 
