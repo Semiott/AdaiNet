@@ -3,13 +3,13 @@ pragma solidity ^0.8.0;
 import "./external/contracts/token/ERC721/ERC721.sol";
 import "./external/contracts/utils/Counters.sol";
 
-contract NalaToken is ERC721{
+contract NalaNation is ERC721{
 
 	using Counters for Counters.Counter;
 	Counters.Counter private _tokenIds;
 	mapping(string => uint8) hashes;
 
-	constructor() public ERC721("EddyToken", "UNA") {}
+	constructor() public ERC721("NalaNation", "NANA") {}
 
 	function awardItem (address recipient, string memory hash, string memory metadata)
  	public returns (uint256){  
