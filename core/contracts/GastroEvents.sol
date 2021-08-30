@@ -9,7 +9,7 @@ import "./SafeMath.sol";
 import "./Context.sol";
 
 /**
- * @title EventToken
+ * @title GastroEvents
  * @dev this contract is a Pausable ERC20 token with Burn and Mint
  * controleld by a central SupplyController. By implementing BCC StablecoinImplementation
  * this contract also includes external methods for setting
@@ -21,7 +21,7 @@ import "./Context.sol";
  * with insufficient funds since no tokens will be issued there.
  */
  
-contract EventToken is Initializable, ReentrancyGuard, Context  {
+contract GastroEvents is Initializable, ReentrancyGuard, Context  {
 
 
     using SafeMath for uint256;
