@@ -19,13 +19,13 @@ import "./ReentrancyGuard.sol";
 import "./IBondingCurve.sol";
 import "./BancorFormula.sol";
 
-import "./EddyStreetToken.sol";
+import "./EatStreet.sol";
 
-contract EddyDistribution is Ownable, ReentrancyGuard, BancorFormula {
+contract StreamCurve is Ownable, ReentrancyGuard, BancorFormula {
 
   using SafeMath for uint256;
 
-  EddyStreetToken public mToken;
+  EatStreet public eToken;
   
       /*
         reserve ratio, represented in ppm, 1-1000000
