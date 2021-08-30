@@ -19,13 +19,23 @@ The Food Streets are captured on Videos and added to the IPFS. The Food Recipes 
 * NodeJS, ReactJS
 
 ## Challenges we ran into
+- Issues with the NodeJS Versions
+- Issues with the Truffle Versions
+- Issues with the Solidity Versions
 
 ## Accomplishments that we're proud of
+- First Ever Tokenisation of Street Foods on Ethereum
+- First Ever Tokenisation of Family Foods on Ethereum
+- First Ever Tokenisation of Eat Streets on Ethereum
+- First Ever Tokenisation of Micro Social Business on Ethereum
 
 ## What we learned
+- The Zora Framework for the Auction of NFTs
+- The Minty Framework for the Storage of NFTs
 
 ## What's next for NalaNet
-
+- Integration with Rarible
+- Intergation with MetaVerse
 
 ## Deployment
 - Nala Nation Primary Token
