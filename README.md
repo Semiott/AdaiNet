@@ -8,10 +8,10 @@ Creative Convergence of Chefs and Coders for the Culinary Community of GastroNau
 - Culinary Communitites in Kundara, Kollam, Kerala
 
 ## What it does
-- NalaNet is an Ethereum Experience, Entertainment and Engineering Platform powered by the concept of Non Fungible Tokens. 
-- It is created for tokenising the food recipes, food streets, food sharing events, food blogs, food festivals and so on.
-- NalaNet envisions an enthusiastic and exciting future for dynamic decentralization of culinary cultures and cuisines across the world. 
-- NalaNet is embarking on a creative convergence of food makers, lovers and consumers beyond the walls of accumulations and aggregations.  
+- Creates an Ethereum Ecosystem Experience powered by the concept of Interactive and Innovative Non Fungible Tokens. 
+- Tokenisises the food recipes, food streets, food sharing events, food blogs, food festivals and related social businesses.
+- Creates an enthusiastic and exciting future for dynamic decentralization of culinary cultures and cuisines across the world. 
+- Embarks on a creative convergence of food makers, lovers and consumers beyond the walls of accumulations and aggregations.  
 
 ## How we built it
 - The Food Streets are captured on Videos and added to the IPFS. The Food Recipes are also added to IPFS. 
