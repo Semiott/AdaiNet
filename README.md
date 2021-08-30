@@ -1,5 +1,24 @@
-# Edible Experience and Entertainment on Ethereum 
+# Edible Experiences and Entertainments on Ethereum Ecosystem
 Creative Convergence of Chefs and Coders for the Culinary Community of GastroNauts
+
+## Inspiration
+- AAHAARA Apps from Semiott Society
+- Ruchi Gramam - A Culinary Community in Kundara, Kollam, Kerala
+
+## What it does
+- Tokenisation of Street Food Experiences
+- 
+
+## How we built it
+
+## Challenges we ran into
+
+## Accomplishments that we're proud of
+
+## What we learned
+
+## What's next for NalaNet
+
 
 ## Concept
 
