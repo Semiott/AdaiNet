@@ -1,9 +1,11 @@
-pragma solidity ^0.6.0;
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
-contract EddyNFT is ERC721{
+contract NalaNFT is ERC721{
 
 	using Counters for Counters.Counter;
 	Counters.Counter private _tokenIds;
